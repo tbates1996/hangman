@@ -1,0 +1,27 @@
+Class diagrams
+class MyFile
+	(+)handle
+	(+)initialize(myFileName)
+	(+)finished
+	(+)to_a(smallest,largest)
+	(+)randomWord(largest,smallest)
+class Display
+	(+)word
+	(+)initialize(word)
+	(+)printDead
+	(+)printScreen(guess)
+class Hangman
+	(+)word, display, wrongGuess, letters
+	(+)initialize(smallest,largest)
+	(+)makeGuess
+	(+)updateGuess
+	(+)updateScreen
+	(+)containLetter
+	(+)lettersUsed
+	(+)lose?
+	(+)win?
+	(+)save_game
+	(+)load_game
+Class Associations
+Hangman ------ 1:1(uses) ------ MyFile
+Hangman ------ 1:1(uses) ------ Display

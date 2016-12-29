@@ -1,0 +1,9 @@
+--- !ruby/object:Hangman
+wrongGuess: 1
+letters:
+- e
+- a
+- i
+word: daishiki
+display: !ruby/object:Display
+  word: daishiki
